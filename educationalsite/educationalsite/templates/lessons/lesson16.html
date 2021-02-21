@@ -1,0 +1,20 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class='title'>Lesson 16 - Inheritance</h1>
+<p>Inheritance is one of the major concepts in classes and modules, and is possibly the most useful one.  The easiest way to explain how they function is through an example: Birds are a super class, or the class that will be inherited by other classes, and it has the attributes color of feathers and wing span and the method fly.  Two classes inherit the Bird class, which are birds that can fly, and birds that can't fly.  The class of birds that can fly inherit all of the attributes and the method, while the flightless bird class only inherit the attributes.  Now three more classes are created, pigeons, robins, and penguins.  The pigeons and robin classes inherit from the class of birds that can fly, and inherit all of its attributes and methods, while the penguin class inherits the birds that can't fly attributes and methods, if the birds that can't fly class had in methods.</p>
+<p>Here is the basic syntax for a super/base class and a subclass of the base class:
+	class Bird(object):
+		def __init__(self, feathers, wingspan):
+			self.feathers = feathers
+			self.wingspan = wingspan
+
+		def fly(self):
+			print('I believe I can fly')
+
+	class BirdsThatCanFly(Bird):
+		def __init__(self):
+</p>
+<p>
+<button><a style='text-decoration: none;' href='Lesson 16 - Input().html'>Click to go to Lesson 16</a></a>
+{% endblock content %}

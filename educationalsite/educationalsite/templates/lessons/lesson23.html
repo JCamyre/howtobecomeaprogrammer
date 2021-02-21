@@ -1,0 +1,21 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class='title'>Lesson 23 - RegEx</h1>
+<p>The RegEx module, aka Regular Expression, main use in Python is to find patterns in text.  Once again, since there are so many attributes and methods in the module, I'll be going over just a few of the main ones, and here's a link to the complete <a href='https://docs.python.org/3/library/re.html;'>list</a> of them.</p>
+<p>One of the main methods is the findall() method.  With the RegEx we must use a set of 'metacharacters', 'special sequences', and 'sets'. I won't go over all of them, but once again the link has a list of all of them.  Let's say we want to find the amount of times a paragraph has 'Hello World' in it, we can use the findall() method.</p>
+<p class='code'>paragraph = 'Hello World is what is commonly said when a programmer starts learning a language. Hello World is made up of two separate words. Hello World is quite a funny phrase as you are addressing the entire world. Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World'</p>
+<p class='code'>y = re.findall('Hello World', paragraph)</p>
+<p class='code'>print(len(y))</p>
+<p>So first we create a variable called paragraph which is equal to a long paragraph which has the phrase 'Hello World' in it many times.  In the second line we set a new variable y equal to the re module with the findall() method, which has the phrase we want to find, 'Hello World', and the text we are searching in, which would be the variable paragraph.</p>
+<p>Another one of the main methods is the search() method. It's purpose is just to test if there is atleast one instance of the thing you are searching for is in the text, rather than every single instance of it like in the findall() method. Let's say we wanted to check to see if the paragraph variable contains the world 'Hello', I wonder what the answer will be.</p>
+<p class='code'>def in_text(phrase, text):</p>
+<p class='code'>x = re.findall(phrase, text)</p>
+<p class='code'>if x:</p>
+<p class='code'>print(phrase + 'is in ' + text)</p>
+<p class='code'>else:</p>
+<p class='code'>print(phrase + 'is not in ' + text)</p>
+<p class='code'>print(in_text('Hello World', paragraph))</p>
+<p>We first create a function called in_text(), with two parameters phrase and text.  We then use those two parameters in our findall() method, and then we use an if statement to output the phrase is in the text, and if it isn't in the text it will output this phrase isn't in the text.  We can't simply output the value of the findall() function because it would output < re.Match object; span=(0, 11), match='Hello World'></p>
+<button><a style='text-decoration: none;' href='Lesson 24 - Sets.html'>Click to go to Lesson 24</a></a>
+{% endblock content %}

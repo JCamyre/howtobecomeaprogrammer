@@ -1,0 +1,16 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class='title'>Lesson 22 - Exception Handling</h1>
+<p>There are many types of errors and exceptions in Python, including syntax errors, when you your "grammar" in your code is wrong, or an overflow error, which occurs when a number is outside of the range of numbers that a computer can represent.</p>
+<p>For example, if there are three parameters, and someone only passes two arguments, then instead of having the program crash, it could instead ask again for the that third argument. Here is the basic syntax for </p>
+<p class='code'>def a(x, y, z):</p>
+<p class='code' style='padding-left: 2em;'>print(x, y, z)</p>
+<p class='code'>try:</p>
+<p class='code' style='padding-left: 2em;'>a(1, 2)</p>
+<p class='code'>except:</p>
+<p class='code' style='padding-left: 2em;'>('You forget one')</p>
+<p>This code would output 'You forget one', since the code in the try: only two arguments, and there were three parameters, so an exception was 'raised', or occurred, so the code that was in the except: was ran, which outputted 'You forget one'.</p>:
+<!-- An alternative to this would be to set default values so that  -->
+<button><a style='text-decoration: none;' href='Lesson 23 - RegEx.html'>Click to go to Lesson 23</a></a>
+{% endblock content %}

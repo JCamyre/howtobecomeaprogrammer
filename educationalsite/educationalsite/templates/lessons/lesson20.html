@@ -1,0 +1,24 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class='title'>Lesson 20 - Files</h1>
+<p>Files used with Python can be very useful if you want to save what you are outputting into a file, rather than it just being outputed to the console.  You can use Python to create, edit, and read files.  Here is the basic syntax for creating a file: </p>
+<p class='code'>
+	file = open('hello_world.txt', 'w')
+	file.write('Hello World!')
+	file.close()</p>
+<p>There is a lot to unpack here.  One the first line, a variable named file was set equal to the function open(), where the two arguments 'hello_world.txt' and 'w', and note that I have the 'file.' in front of the open() function.  Since we do not have a text file called 'hello_world.txt', Python created a file just for us.  If there was already a file called 'hello_world.txt', then we would be deleting the old one and starting over.  The 'w' means that we are writing the file, rather than reading it, which will be discussed later on.  On the third line, we use the file variable name and the close() function, which is required whenever working with files.  Note, if you were to do two write(), they would be on the same line.  To counteract that, simply use write('\n') in between the stuff you want to write in the file, as '\n' always goes to the next line.  Let us see what happens when read this file: </p>
+<p class='code'>
+	file = open('hello_world.txt', 'r')
+	for x in file:
+		print(x)
+	file.close()</p>
+<p>On the first line, we do exactly the same for when we were writing the file, except we have a 'r' instead of a 'w'.  On the second line, we start our for loop, and we are iterating through the file variable.  On the third line we are simply printing out each line of the file, and since there is only one line in our file currently, it will print out one line.  Fourth line, making sure to always close().</p>
+<p>If you want to edit a file rather than totally replace it, simply replace 'w' with 'a'.  Here's an example: </p>
+<p class='code'>file = open('hello_world.txt', 'a')
+								file.write('\n')
+								file.write('Hello World again!')
+								file.close()</p>
+<p>If we were to print out the file, this time it would print out 'Hello World!' on one line and 'Hello World again!' on the next line.</p>
+<button><a style='text-decoration: none;' href='Lesson 21 Module Datetime.html'>Click to go to Lesson 21</a></a>
+{% endblock content %}

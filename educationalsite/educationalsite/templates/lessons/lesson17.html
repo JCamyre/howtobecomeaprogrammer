@@ -1,0 +1,15 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class='title'>Lesson 17 - Input()</h1>
+<p>The input method can be very useful when a program you create needs information from the user.  For instance you may need their name and age, or if it is a game, their username.  Here's is the syntax for asking for someone's name:
+	<p class='code'>name = input('Please enter your name: ') <br/>
+	print(name)
+</p></p>
+<p>Let's say that I inputted into the console 'John Smith', without the quotation marks, the code would output 'John Smith', with quotation marks.</p>
+<p>If we wanted to be a little more specific about their name, such as that we want to split their name up into first and last name, we could do this:
+	<p class='code'>first_name, last_name = input().split()</p></p>
+<p>We utilize the .split() function that we learned about early in the course, which was utilized to split up the string 'John Smith' so that first_name variable would be equal to 'John' and the last_name variable would be equal to 'Smith'.</p>
+	<!-- Add about .split() and ''.join() somewhere -->
+	<button><a style='text-decoration: none;' href='Lesson 17 - List Comprehensions.html'>Click to go to Lesson 17</a></a>
+{% endblock content %}

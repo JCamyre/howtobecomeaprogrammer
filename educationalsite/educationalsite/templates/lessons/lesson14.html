@@ -1,5 +1,29 @@
 {% extends 'educationalsite/base.html' %}
 {% load tags %}
 {% block content %}
+<h1 class='title'>Lesson 14 - Dictionaries</h1>
+<p>Dictionaries are a way of storing data in Python, like lists which we have gone over in a previous lesson.</p>
+<p>Dictionaries function the same that a real dictionary would work, even though no one has used one in the past 5 years, where each term has a definition.  In the case of python, the term is referred to as the key, and the definition is referred to as a value.</p>
+<p>The syntax for a dictionary is as the following:
+	dict = {
+	'a_number': 1,
+	'another_number': 2,
+}
+</p>
+<p>We can use for loops to print out a dictionary, with the following syntax:
+	for x in dict:
+		print(x + ': ' + str(dict[x]))
+</p>
+<p>This would output a dictionary key and its value seperated by a colon every line.  You can also print out a value using the following syntax:
+	print(dict['a_number']), which would print out 1</p>
+<p>You can add on keys and values to your dictionary after it is initialized, created, using the following syntax:
+	dict['new_key'] = 'new_value'</p>
+<p>You can also get rid of a key or value, using the following syntax:
+	del('dict'['new_key'])</p>
+<p>To test your understanding of dictionaries, perform the following: Create a new dictionary with corresponding keys and values for your first and last name, your birthday, and what state you live in.  Then, using the %s, print out a sentence introducing yourself.  For example:
+	Hi, my name is John Smith! My birthday is on 12/12/99 and I am from California, nice to meet you!</p>
+<p>Once you have printed out something similiar, you can move on to the next lesson</p>
+<!-- maybe add a button to reveal the answer to challenges?? -->
 
+<button><a style='text-decoration: none;' href='Lesson 14 - Modules.htm'>Click to go to Lesson 14</a></a>
 {% endblock content %}

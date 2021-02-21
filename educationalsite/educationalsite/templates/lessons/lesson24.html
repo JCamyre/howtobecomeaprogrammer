@@ -1,0 +1,12 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class='title'>Lesson 24 - Sets</h1>
+<p>Sets are another type of arrays, which are once again lists, sets, tuples, and dictionaries.  The difference between sets and other types of arrays is that the data in sets aren't in a set order and there are no indexes, like list[0] or tuple[1].  Here's an example of a list: </p>
+<p class='code'>a_set = {1, 2, 3}</p>
+<p class='code'>print(a_set[1])</p>
+<p class='code'>a_set[2] = 5</p>
+<p>We first we create a set, then we try to output a specific index, however with sets we can not do this, and we try to set a specific index equal to a new value, but once again we can not access or reassign a specific index.  We can, however, use the add() function for a single piece of data, or the update() function to update multiple pieces of data using a list.</p>
+<p>We can also remove a specific item, not a specific index, from a list, using the remove() function.  The clear() function will empty the set, and just like lists, you can use the set() function to create a set.</p>
+<button><a style='text-decoration: none;' href='Lesson 25 - Tkinter.html'>Click to go to Lesson 25</a></a>
+{% endblock content %}

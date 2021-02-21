@@ -1,5 +1,25 @@
 {% extends 'educationalsite/base.html' %}
 {% load tags %}
 {% block content %}
-
+<h1 class='title'>Lesson 13 - Classes</h1>
+<p>Objects are used to create and hold functions and variables that are unique to that specific object.  An example of an object is a specific breed of dog that has assigned attributes, variables and values for that dog such as the color of the fur, the breed of the dog, etc, and methods, which are basically functions in an object such as a method for the dog to bark and for it to wag its tail</p>
+<p>Classes are used to create an instance of the class, which are objects.  So, carrying on with the dog example, the class could be called Dog, and it is has attributes that are set equal to the values that you pass whenever you create a new Dog object.</p>
+<p>The basic syntax for creating a class is has the following, using the dog example:
+  	<p class='code'>class Dog(object):</p>
+		<p class='code'></p>
+  	<p class='code' style='padding-left: 2em;'>	def __init__(self, breed, fur):</p>
+  	<p class='code' style='padding-left: 4em;'>		self.breed = breed</p>
+  	<p class='code' style='padding-left: 4em;'>		self.fur = fur</p>
+		<p class='code'></p>
+  	<p class='code' style='padding-left: 2em;'>	def bark(self):</p>
+  	<p class='code' style='padding-left: 4em;'>		print('Woof woof')</p>
+</p>
+<p>Make sure to always have self as an argument for everything, such as the self.__init__(self) and def bark(self).  For the self.__init__ method make sure to always set self.(name of argument) equal to (name of argument).  The only exception to this, for now, is if you want to keep the variable's value constant no matter which instance of the class, which in that case you would simply do self.(name of argument) equal to what ever value you want.</p>
+<p>The syntax for creating a specific dog object using the Dog class is as the following, and I created an instance of the Dog class called Sam, which is a Chihuahua and has black fur.  I also called the bark() method: </p>
+<img src='https://testingforpersonalproject.neocities.org/Screenshots/Lesson%2012%20pt1.PNG'/>
+<p>Can you guess how to do print out the attributes of a dog object?  Click to reveal to see if you are correct!</p>
+<p>I challenge you now to make your own class, which can be pretty much whatever you want, such as cars, birds, phones, etc, with attributes such as its size, gender, brand, and have a method such as the Dog's bark method, and create an instance of that class and run the method(s) for that object.  Once you are done, move on to the next lesson.</p>
+<button onclick="myFunction()">Click to reveal the solution</button>
+<div id='myDIV' style='display: none;'><img style='margin-top: 65px;' src='https://testingforpersonalproject.neocities.org/Screenshots/Lesson%2012%20pt2.PNG'/></div>
+<button><a style='text-decoration: none;' href='Lesson 13 - Dictionaries.htm'>Click to go to Lesson 13</a></a>
 {% endblock content %}

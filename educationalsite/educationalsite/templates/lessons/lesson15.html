@@ -1,5 +1,13 @@
 {% extends 'educationalsite/base.html' %}
 {% load tags %}
 {% block content %}
-
+<h1 class='title'>Lesson 15 - Modules and Packages</h1>
+<p>Modules in Python can be imported into a python file and be able to use its own classes.  For example, say that we are making a new python file, but we want to be able to make new Dogs using the Dog Class from Lesson 12, it would look something like this, assuming that the name of the python file that has the Dog Class is named Dog.py:
+	import Dog
+	Jeff = Dog('Chihuahua', 'Brown')</p>
+<p>There are many modules that you can import that come standard with Python 3, here is a link to a <a href='https://docs.python.org/3/library/'>full list of them.</a></p>
+<p>Once you have become more familiar with coding, you may find the need for a set of modules, also known as a package, that isn't standard in python, and you can use <a href='https://pypi.org/'>this website</a> to download third-party packages.</p>
+<!-- add challenge -->
+<!-- Mention the syntax for a regular module, such as import datetime print(datetime.datetime.now()) -->
+<button><a style='text-decoration: none;' href='Lesson 15 - Inheritance.html'>Click to go to Lesson 15</a></a>
 {% endblock content %}

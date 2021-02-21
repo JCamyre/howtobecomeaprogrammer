@@ -1,0 +1,12 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class='title'>Lesson 21 - Module Datetime</h1>
+<p>The datetime module, as the name implies, gives access to a wide range of time related functions.  Due to the sheer amount of methods and attributes in this module, I can not cover them all, however there is a complete list of all available methods and attributes <a href='https://docs.python.org/3/library/datetime.html'>here</a>.</p>
+<p>One of the most useful methods in this method is the .now() method, which will tell us the current time and date: </p>
+<p class='code'>import datetime</p>
+<p class='code'>print(datetime.datetime.now())</p>
+<p>So we first import the module we want as always, which in our case is the datetime module.  Then we use the print() function to output the datetime module's class datetime, which has a method called now(). At the time of creating this lesson, this method outputted 2019-01-07 16:21:38.399280, the current date, time to the nearest nanosecond, very nice precision.</p>
+<p>Another useful module from a different class </p>
+<button><a style='text-decoration: none;' href='Lesson 22 -  Exeception Handling.html'>Click to go to Lesson 22</a></a>
+{% endblock content %}

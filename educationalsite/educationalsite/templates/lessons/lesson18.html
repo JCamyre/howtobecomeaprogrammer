@@ -1,0 +1,14 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class='title'>Lesson 18 - List Comprehensions</h1>
+<p>In this lesson I want to introduce range() as well as list comprehensions.  The range() function is useful to us when working with for loops and list comprehensions.  The function has three parameters, start, stop, and step.
+	Start is what number the range() starts at, and is defaulted at zero.  Stop is the range of range(), or how many elements there are in the range().  Step is how many the range() counts by, defaults to 1.  If you passed only one argument and used list(), the one argument passed would be for the stop parameter: </p>
+	<p class='code'>print(list(range(10)))</p>
+<p>The output for this code would result in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] as since there was only one argument passed, start was defaulted to 0 and step was defaulted to 1. The number of elements in the list was equal to 10, as the argument passed to the parameter stop was 10.</p>
+<p>Try to use the range() function with for loops.  Create a for loop that will for every time iteration of the loop, the current value of the range() will be printed.</p>
+<p>Now on to list comprehensions.  List comprehension's main use case is as a way to create a new list based of another list.  The following is the basic syntax for a list comprehension:
+	<p class='code'>new_list = [i for i in old_list if (some condition(s))]</p></p>
+<p>Here's a challenge using list comprehensions: Create a list that goes from one to 100, but only contains numbers that are divisible by 2, and either 5 or 10.  Check for the solution at the bottom and compare answers.  When your ready move on to the next lesson.</p>
+<button><a style='text-decoration: none;' href='Lesson 18 - If statements.html'>Click to go to Lesson 18</a>
+{% endblock content %}
