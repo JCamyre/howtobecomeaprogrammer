@@ -1,0 +1,14 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class=title>Lesson 10 - Conditions</h1>
+<p>Conditions are just like inequalities in math, <, <=, ==, >, >=, !=.  If the condition makes since, then it is true, and value of inequality would be True, however if the inequality is false, than the value of the inequality would be False.</p>
+<p>For example, print(43 < 21) would output False, as the 43 is not less than 21.  Some of the unique conditions are !=, where if the two values are not equal, then the value is True.  The condition 'or' is True if one or more of the conditions are True, for example print(True or 43 < 21) would output True, even though 43 is not less than 21.  For and, both conditions have to be True for it to be True, and not, which reverses the value of a condition, for example print(not True) would output False.</p>
+<p>A challenge for you is to guess the output of the following code: print(not True and False or 43 < 21 and True or 21 >= 21)</p>
+<p>Once you have completed the challenge move on to the next lesson.</p>
+<button onclick="myFunction()">Click to reveal the solution</button>
+<div id='myDIV' style='display: none;'><img style='margin-top: 65px;' src='Screenshots\Lesson 9 pt1.PNG'/></div>
+<button onclick="myFunction2()" style='margin-top: 65px'>Click to reveal the solution</button>
+<div id='myDIV2' style='display: none;'><img style='margin-top: 130px;' src='Screenshots\Lesson 9 pt2.PNG'/></div>
+<button style='margin-top: 130px'><a style='text-decoration: none;' href='Lesson 11 - For Loops.html'>Click to go to Lesson 11</a></a>
+{% endblock content %}

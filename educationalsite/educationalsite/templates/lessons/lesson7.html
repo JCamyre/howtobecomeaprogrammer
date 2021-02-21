@@ -1,0 +1,21 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class=title>Lesson 7 - String formatting</h1>
+<p>String formatting involves strings, which have been discussed previously, and data to insert into the string.</p>
+<!-- rephrase -->
+<p>There are two ways of accomplishing this, the first is the .format().  The basic syntax is:
+	 <p class='code'>"{}".format(variable)</p></p>
+<p>You can of course put in string you would like in the quotations, however the curly brackets are where the variable would be placed in the string.  You can have multiple sets of curly brackets as well.  The syntax for that would look like this:
+ 	<p class='code'>"{} {} {}".format(variable1, variable2, variable3)</p></p>
+<p>One more thing to note for now is that you can put in a data type in the parenthesises, you aren't limited to only putting variables in the parenthesises. I challenge you to use the .format() method to print out the following phrase: 'Hello, my full name is (your full name)!  Nice to meet you!'  You can either put the string for you name in the .format() directly, or set your full name equal to variables and then using the .format().</p>
+<p>The second type of string formatting is the % sign.  The syntax for this is relatively the same. Here's an example:
+	<p class='code'>'The first 10 letters of the alphabet are: %s' % 'abcdefghij'</p></p>
+<p>Notice the %s next to the %, as the data type that replaced the % was a string, we had to compensate for that by placing %s, and the same rule applies for integers, %d.  For lists, you can use the %s.  You can have multiple %'s.  I once again challenge you to do the same thing as you did with the .format() method, printing 'Hello, my full name is (your full name)!  Nice to meet you!'</p>
+<p>Once you have finished the challenge move on to the next lesson!</p>
+<button onclick="myFunction()">Click to reveal the solution</button>
+<div id='myDIV' style='display: none;'><img style='margin-top: 65px;' src='https://testingforpersonalproject.neocities.org/Screenshots/Lesson%207%20pt1.PNG'/></div>
+<button onclick="myFunction2()" style='margin-top: 65px'>Click to reveal the solution</button>
+<div id='myDIV2' style='display: none;'><img style='margin-top: 130px;' src='https://testingforpersonalproject.neocities.org/Screenshots/Lesson%207%20pt2.PNG'/></div>
+<button style='margin-top: 130px'><a style='text-decoration: none'; href='Lesson 8 - String operators.html'>Click to go to Lesson 8</a></button>
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class=title>Lesson 8 - String operators</h1>
+<p>String operators are made up of several functions, such as .format(), and the concept of functions will be covered much deeper later in the course, that can be used with or be used to modify a string.  The first operator is the .upper() function, which when used at the end of a string will capitalize every single letter.  The second operator is the .lower() function, which when placed at the end of a string will make every letter lower case.  The third operator is the len() function, which when a string is placed in between the parenthesises, it will count the amount of letters in the string.  len() can also be with a list to count the number of pieces of data in the list.</p>
+<p>An example for each respectively:
+	 <p class='code'>print('Hello'.upper())</p>
+<p>Which would output 'HELLO'.</p>
+ 	 <p class='code'>print('Hello'.lower())</p>
+<p>Which would output 'hello'.</p>
+	 <p class='code'>print(len('hello'))</p>
+<p>Which would output 5.</p>
+	<p class='code'>print(len([1, 2, 3]))</p>
+<p>Which would output 3.</p>
+<p>I challenge you to perform the following:
+	Set your first name equal to a variable and your last name equal to a variable, find the length of both, and divide your first name length by your last name's length.</p>
+	<button onclick="myFunction()">Click to reveal the solution</button>
+	<!-- Prob just get rid of this -->
+	<div id='myDIV' style='display: none;'><img style='margin-top: 65px;' src='Screenshots\Lesson 8 pt1.PNG'/></div>
+	<button style='margin-top: 65px' onclick="myFunction2()">Click to reveal the solution</button>
+	<div id='myDIV2' style='display: none;'><img style='margin-top: 130px;' src='Screenshots\Lesson 8 pt2.PNG'/></div>
+	<button style='margin-top: 130px'><a style='text-decoration: none;' href='Lesson 9 - Logical Operators.html'>Click to go to Lesson 9</a></a>
+{% endblock content %}

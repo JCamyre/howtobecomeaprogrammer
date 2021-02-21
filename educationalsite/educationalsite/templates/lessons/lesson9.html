@@ -1,0 +1,16 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class='title'>Lesson 9 - Logical Operators</h1>
+<p>The basic logical operators are: and, or, not.  They are all very useful in conjunction with conditions and in if statements.  The first operator is 'or'.  Or compares two statements, and if atleast one of them is true, then both the two statements and or are considered 'True'.  Here's an example: </p>
+	<p class='code'>print(len('John') == 4 or False)</p>
+<p>This would print out True as even though there is a 'False', the length of 'John' is equal to 4, so the print() prints True.</p>
+<p>The next operator is 'and'.  And, unlike or, requires both statements to be True for it to print True, otherwise it will return False.  For example: </p>
+	<p class='code'>print(len('John') == 4 and False)</p>
+<p>This code would print out False as even though the length of 'John' is 4, there is a False, so the print() would print out False.</p>
+<p>The final operator is 'not'.  Not is not used the same like and or or, instead it used to modify conditions.  It turns False to True and True to False. For example: </p>
+	<p class='code'>print(not False)</p>
+<p>This would output True, as True is the opposite of False.</p>
+<p>Logical operators will come in handy, especially regarding if statements and while Loops.</p>
+<button><a style='text-decoration: none;' href='Lesson 10 - Conditions.html'>Click to go to Lesson 10</a></a>
+{% endblock content %}
