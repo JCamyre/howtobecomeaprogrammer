@@ -1,0 +1,19 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class='title'>Lesson 5 - Operators</h1>
+<p>Operators are things like +, -, *, /, which are addition, subtraction, multiplication, and division respectively, and can be used to perform math equations</p>
+<p>These operators can peform the math equations with integers, and can be used as values for variables and print()</p>
+<p>For variables, you can try:
+	<p class='code'> number = 2 + 2</p></p>
+<p>Or something more complex with a print():
+	 <p class='code'>number = 2 / 2 * 42 + 32 - 7 / 2 <br/>
+	 print(number)</p></p>
+<p>Or print it directly without using a variable:
+	<p class='code'> print(2 / 2 * 42 + 32 - 7 / 2)</p></p>
+<button onclick="myFunction()">Click to reveal the solution</button>
+<div id='myDIV' style='display: none;'><img style='margin-top: 65px;' src='Screenshots\Lesson 5 part 1.PNG'/></div>
+<button style='margin-top: 65px' onclick="myFunction2()">Click to reveal the solution</button>
+<div id='myDIV2' style='display: none;'><img style='margin-top: 130px;' src='Screenshots\Lesson 5 part 2.PNG'/></div>
+<button style='margin-top: 130px'><a style='text-decoration: none;' href='Lesson 6 - Lists.htm'>Click to go to Lesson 6</a></a>
+{% endblock content %}

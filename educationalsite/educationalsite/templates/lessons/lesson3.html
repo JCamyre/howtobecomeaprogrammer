@@ -1,0 +1,21 @@
+{% extends 'educationalsite/base.html' %}
+{% load tags %}
+{% block content %}
+<h1 class=title>Lesson 3 - Variables</h1>
+<p>One of the key concepts of all languages, not just Python, are variables.  Variables are basically a value with a name set by you.  The basic syntax, aka the proper "grammar" of programming, of it is like so:
+	<p class='code'>(name of variable) = (some form of data, such as numbers)</p>
+</p>
+<p>Without the parenthesises.</p>
+<p>Try setting the word "number," without quotations, equal to any number that you would like</p>
+<p>After you have set the your variable to what you want, output it by running:
+	<p class='code'> print(number)</p>
+</p>
+<p>Another cool thing about variables is that you can change the value of a variable, try this out by setting the number variable to a different number and once again run:
+	<p class='code'> print(number)</p>
+</p>
+<button onclick="myFunction()" style='margin-top: 0px'>Click to reveal the solution</button>
+<div id='myDIV'style='display: none;'><img style='margin-top: 65px;' src='Screenshots\Lesson 3 pt 1.PNG'/></div>
+<button onclick="myFunction2()" style='margin-top: 65px'>Click to reveal the solution</button>
+<div id='myDIV2'style='display: none;'><img style='margin-top: 130px' src='Screenshots\Lesson 3 pt 2.PNG'/></div>
+<button style='margin-top: 130px'><a style='text-decoration: none;' href='Lesson 4 - Strings, Ints, Booleans, Floats.htm'>Click to go to Lesson 4</a></a>
+{% endblock content %}

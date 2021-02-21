@@ -1,0 +1,133 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #3d4047;
+}
+
+button {
+	width: 500px;
+	height: 50px;
+	position: absolute;
+	left: 37%;
+	font-size: 24px;
+  background-color: white;
+  border-radius: 10px;
+}
+p {
+	font-size: 28px;
+	line-height: 150%;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #424242;
+    border-radius: 5px;
+    padding: 20px;
+    width: 98%;
+}
+#text {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 44px 15px;
+    text-decoration: none;
+    font-size: 24px;
+    height: auto;
+}
+#header {
+  margin: 0;
+  text-decoration: bold;
+  color: #00615A;
+  font-size: 48px;
+}
+
+li a:hover {
+  background-color: black;
+  opacity: 1;
+  border-radius: 20px;
+}
+li img:hover {
+  background-color: black;
+  border-radius: 20px;
+}
+
+.code {
+  color: #ff002e;
+  font-weight: bold;
+}
+.container {
+	background-color: white;
+	padding: 100px;
+	border-radius: 5px;
+	height: 3000px;
+}
+.big-text {
+	font-size: 36px;
+	text-align: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #424242;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-top-right-radius: 5px;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    display: block;
+
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.title {
+  text-align: center;
+  color: #00615A;
+}
+.center {
+   margin-left: auto;
+   margin-right: auto;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+#pics {
+  width: 50%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* Maybe add the hover code */
