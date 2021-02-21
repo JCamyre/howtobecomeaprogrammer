@@ -1,0 +1,109 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+	  <link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet"></head>
+</head>
+<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div>
+		<!-- Maybe make header sticky? -->
+		<!-- Maybe add an additional resource page, and I can link things like the Python typing practice website -->
+		<ul>
+	  		<li><a href='index.html'><img style='width: 100px; height 100px; padding: 6px; float: left;'src = 'sources\Python Logo.png'/></a><p style='float: left; line-height: 200%; color: white; padding-left: 12px;'>HowtoBecomeaProgrammer</p><a style='float: right;' id='text' class='text-style' href='about us.html'>About Us</a><a style='float: right;' id='text' class='text-style' href='contact us.html'>Contact Us</a></li>
+	  </ul>
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href='Lesson 1 - Welcome to Python.htm'>Lesson 1</a>
+			<a href='Lesson 2 - Hello, World.htm'>Lesson 2</a>
+			<a href='Lesson 3 - Variables.html'>Lesson 3</a>
+			<a href='Lesson 4 - Strings, Ints, Booleans, Floats.htm'>Lesson 4</a>
+			<a href='Lesson 5 - Operators.htm'>Lesson 5</a>
+			<a href='Lesson 6 - Lists.htm'>Lesson 6</a>
+			<a href='Lesson 7 - String Formatting.html'>Lesson 7</a>
+			<a href='Lesson 8 - String operators.html'>Lesson 8</a>
+			<a href='Lesson 9 - Logical Operators.html'>Lesson 9</a>
+			<a href='Lesson 10 - Conditions.html'>Lesson 10</a>
+			<a href='Lesson 11 - For Loops.html'>Lesson 11</a>
+			<a href='Lesson 12 - Functions.html'>Lesson 12</a>
+			<a href='Lesson 13 - Classes.htm'>Lesson 13</a>
+			<a href='Lesson 14 - Dictionaries.htm'>Lesson 14</a>
+			<a href='Lesson 15 - Modules.htm'>Lesson 15</a>
+			<a href='Lesson 16 - Inheritance.html'>Lesson 16</a>
+			<a href='Lesson 17 - Input().html'>Lesson 17</a>
+			<a href='Lesson 18 - List Comprehensions.html'>Lesson 18</a>
+			<a href='Lesson 19 - If statements.html'>Lesson 19</a>
+			<a href='Lesson 20 - Files.html'>Lesson 20</a>
+			<a href='Lesson 21 - Module Datetime.html'>Lesson 21</a>
+			<a href='Lesson 22 - Exeception Handling.html'>Lesson 22</a>
+			<a href='Lesson 23 - RegEx.html'>Lesson 23</a>
+			<a href='Lesson 24 - Sets.html'>Lesson 24</a>
+			<a href='Lesson 25 - Tkinter.html'>Lesson 25</a>
+			<a href='Mini Lesson 1 - Multiple Variable Names.html'>Mini Lesson 1</a>
+			<a href='Mini Lesson 2 - Importing Modules.html'>Mini Lesson 2</a>
+			<a href='Mini Lesson 3 - Lambda Functions.html'>Mini Lesson 3</a>
+			<a href='Mini Lesson 4 - Tuples.html'>Mini Lesson 4</a>
+			<a href='Mini Lesson 5 - While Loops.html'>Mini Lesson 5</a>
+			<p></p>
+	</div>
+<div id="main" style='padding: 10px; line-height: .75'>
+		  		  <h2>Lessons</h2>
+		  		  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<script>
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "200px";
+	    document.getElementById("main").style.marginLeft = "200px";
+	    document.body.style.backgroundColor = "white";
+	}
+
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	    document.getElementById("main").style.marginLeft= "0";
+	    document.body.style.backgroundColor = "white";
+		}
+
+	function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    };
+}
+</script>
+	</div>
+<div class='container' style='padding: 0px;'> <p class='big-text'> Welcome to HowtoBecomeaProgrammer, get ready to become a master at Python! </p>
+	<!-- set up two rows for each etext and pic combo -->
+	<!-- Add titles -->
+	<!-- Maybe add titles, like internship -->
+	<button onclick="location.href='Lesson 1 - Welcome to Python.htm'" type="button" style='position: relative; text-decoration: bold;'>Press here to start learning!</button>
+	<h1 style='line-height: 100px; font-size: 48px;' class=title>Why learn to code?</h1>
+
+	<div class='center' style='width: 1200px; height: 750px;'><img class='pics' style='position: relative; float: right; height: 600px; padding-left: 100px;' src='http://curacaochronicle.com/wp-content/uploads/2017/02/murphy.jpg'/>
+	<h1 class='paragraphs' id='header' style='width: 55%;'>Success </h1>
+	<p class='paragraphs' style='position: relative; width: 70%; margin: 0px;'>	Bobby Murphy, the co-founder and the CTO of Snapchat, and is worth over 3 billion dollars. He became the second-youngest billionaire in the world, all due to his skills in software engineering. Anyone who learns programming may one day became the youngest-billionaire in the world, which is currently the other co-founder of Snapchat, Evan Spigel.</p>
+	 </div>
+
+	<div class='center' style='width: 1200px; height: 500px; '><img class='pics' style='position: relative; float: left; height: 350px;' src='https://i1.wp.com/www.metacenterchicago.com/wp-content/uploads/2018/02/the-positive-implications-of-internships-961x600.jpg?fit=961%2C600&ssl=1 '/>
+	<h1 class='paragraphs' id='header' style='float: right; width: 40%;'>Internship</h1>
+	<p class='paragraphs' style='position: relative; float: right; width: 40%; margin: 0px;'>There are many opportunities regarding internships involving programming. Many tech companies such as <a href='https://careers.google.com/students/'>Google</a>, <a href='https://www.apple.com/jobs/us/students.html'>Apple</a>, and <a href='https://www.facebook.com/careers/students-and-grads/?teams[0]=Internship%20-%20Engineering%2C%20Tech%20%26%20Design&teams[1]=Internship%20-%20Business&teams[2]=University%20Grad%20-%20Engineering%2C%20Tech%20%26%20Design&teams[3]=University%20Grad%20-%20Business'>Facebook</a>, where you can not only utilize your skills learned through this course and gain a lot of hands-on experience, but can also get paid, as some of these tech companies offer paid internship positions!</p>
+	</div>
+
+	<div class='center' style='width: 1200px; height: 600px; '>
+		<h1 class='paragraphs' id='header' style='width: 75%;'>Careers</h1>
+		<p class='paragraphs' style='position: relative; float: left; width: 40%; margin: 0px;'>There are many potential careers that require a knowledge of programming.  A few include software engineering, programming, software developing, web developer, and much more. These jobs pay very well, for example the average salary for a software developer was more than $100,000 in 2016.</p>
+		<img style='float: right; width: 50%' src='https://www.technotification.com/wp-content/uploads/2018/04/software-developer-vs-software-engineer-840x500.jpg'/>
+	</div>
+
+	<div class='center' style='width: 1200px; height: 700px;'>
+		<img style='float: left; width: 50%; padding-right: 100px;' src='https://i2.cdn.turner.com/money/dam/assets/150305144844-private-college-roi-standford-university-780x439.png'/>
+		<h1 class='paragraphs' id='header' style='float: right; width: 40%;'>Colleges</h1>
+		<p class='paragraphs' style='position: relative; width: 40%; margin: 0px; float: right;'>One of the best ways to get a job in programming is through a college degree, as many positions at tech companies require some amount of college. Colleges have degrees available in software engineering, information technology, and computer science. Here's <a href='https://www.niche.com/colleges/search/best-colleges-for-computer-science/'>website</a> where you can check the best colleges that have degrees in computer science.</p>
+		<!-- (MENTION THE AMOUNT OF OPEN JOBS IN THE MARKET RN AND SINCE OUR WORLD IS MORE RELIANT ON TECHNOLOGY JOBS IN SPECIFCALLY SOFTWARE ENGINEERING SHOULD INCREASE) -->
+	</div>
+</div>
+</body>
+</html>
